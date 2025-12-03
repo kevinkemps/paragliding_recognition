@@ -1,0 +1,13 @@
+venv/
+paraglider_recognition-8/
+
+# Environment variables and API keys
+.env
+.env.local
+.env.*.local
+
+# IDE
+.DS_Store
+.vscode/
+.idea/
+
