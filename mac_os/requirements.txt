@@ -1,0 +1,21 @@
+# Core ML & inference
+ultralytics
+torch
+tensorflow
+opencv-python
+
+# Utilities
+numpy
+pandas
+python-dotenv
+
+# Dataset / deployment / SDKs
+roboflow
+inference-sdk
+inference
+supervision
+qai-hub-models
+onnxruntime
+
+# Optional (platform specific): tflite-runtime (install on target device if needed)
+# tflite-runtime
