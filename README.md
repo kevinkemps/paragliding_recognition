@@ -73,14 +73,6 @@ paraglider_detection/
 │   ├── inference_on_docker.ipynb
 │   ├── rtsp_stream.ipynb
 │   └── sample_inference.ipynb
-├── paraglider_recognition-8/     # Dataset and baseline model files
-│   ├── data.yaml
-│   ├── README.dataset.txt
-│   ├── README.roboflow.txt
-│   ├── train/
-│   ├── valid/
-│   ├── test/
-│   └── yolov8n.pt
 ├── training/                     # training artifacts and notebooks
 │   ├── paraglider_cv-2.ipynb
 │   ├── yolo11n.pt
