@@ -63,10 +63,6 @@ The project includes several pre-trained models:
 paraglider_detection/
 ├── .env                          # Environment variables (gitignored)
 ├── README.md
-├── convert_to_tflite.py          # Conversion script (programmatic)
-├── convert_to_tflite_simple.py   # Conversion script using YOLO CLI
-├── convert_to_tflite.ipynb       # Interactive conversion notebook
-├── convert_to_tflite.ipynb       # Interactive conversion notebook
 ├── download_dataset.py           # helper to download dataset via Roboflow
 ├── jetson/                       # Jetson examples and helpers
 │   ├── direct_inf.py
