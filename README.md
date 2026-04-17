@@ -157,9 +157,25 @@ Notes:
 - On macOS, GPU/CUDA is not available — conversion should be run with `device="cpu"`.
 - If you encounter issues in programmatic export, use `convert_to_tflite_simple.py` which calls the `yolo` CLI.
 
+## Rubik Pi 3 Deployment
+
+Use the offline Rubik Pi runtime in `rubikpi/` for device-side inference on local `.tflite` models.
+
+```bash
+cd rubikpi
+pip install -r requirements.txt
+python run_rtsp_tflite.py \
+	--source "$RTSP_URL" \
+	--model tflite_models/yolov8s_saved_model/yolov8s_float16.tflite \
+	--output-dir output \
+	--save-video
+```
+
+The Rubik Pi runtime is fully local. It does not use Roboflow API calls or a local inference server.
+
 ## Running Inference
 
-Examples and helper scripts live under `jetson/` and `mac_os/`:
+Examples and helper scripts live under `jetson/`, `mac_os/`, and `rubikpi/`:
 
 - `jetson/inf.py`, `inf2.py`, `inf3.py` — Jetson-ready examples (updated to use `.env` variables)
 - `mac_os/inference_on_docker.ipynb` — example using a local Docker inference server
